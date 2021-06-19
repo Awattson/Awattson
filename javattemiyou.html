@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja"
+  <head>
+    <meta charset="utf-8">
+    <title>回路off回路on</title>
+    <link rel="stylesheet" href="css/KeyMANDARA.css">
+  </head>
+  <body id="kagimandara">
+
+    <!--ログイン機能-->
+    <script type="text/javascript">
+      function first(){
+        var user = prompt("あなたの名前をご記入ください。");
+        if(user==false || user==null){
+          alert("名前を記入しない限り入れません。どうぞお帰り下さい。");
+          first();
+        }else{
+          document.title=user;
+        }
+        var  pass=prompt("いらっしゃい"+user+"さん。パスワードを入力してください。");
+        var passWord="πドゥアイ"
+        if(pass == passWord){
+          alent("you have passed");
+        }else{
+          alert("パスワードが違います。初期位置に転送します。");
+          first();
+        }
+      }
+      window.onload=first();
+    </script>
+
+    <!--科技曼荼羅-->
+    <section>
+      <h2 id="kagititle">科技曼荼羅(KeyMANDARA)</h2>
+      <p>科技曼荼羅とはMRBグループが文化祭(四つ葉祭）で行うことを想定されたライヴ・コンサートである。</p>
+      <p id="attention">平沢進様、平沢進関係者との関係は一切ありません</p>
+      <p>科学とは仮定という流動の一瞬の輝きに過ぎない<br>
+        この流動は何千億年もの彼方へと収束する。<br>
+        私たちはこの流動の定義する物の一瞬一瞬でしかなくすでにどこかにたどり着いている。
+      </p>
+      <p id="kagiP1">我々はこの流動の一点を最終と決めつけそれを疑わぬ多数派の流動という不誠実かつ非科学的概念を招くものを見た。</p>
+      <p>これよりこの流動の位相をずらし、仮定の流動へと戻す作業に入る。
+        多数派を作りかねない非仮定の科学者に鞭を打つ。<br>
+        鞭打ちて30,000打ちを達成した暁には摩訶不思議な流動は多数派のクリーンインストールを完了する。<br>
+        仮定の極致を開く鍵の未来を願って　πドゥアイ
+      </p>
+    </section>
+    <a target="_blank" href="awtsont.html">メインページへ戻る</a>
+    <p>
+      Copyright© Awattson 2021
+    </p>
+  </body>
+</html>
