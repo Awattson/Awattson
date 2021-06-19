@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja"
+  <head>
+    <meta charset="utf-8">
+    <title>メンバー限定ホーム</title>
+    <link rel="stylesheet" href="css/memberh.css">
+  </head>
+  <body id="homeAll">
+    <!--ログイン機能-->
+    <script type="text/javascript">
+      function first(){
+        var user = prompt("あなたの名前をご記入ください。");
+        if(user==false || user==null){
+          alert("名前を記入しない限り入れません。どうぞお帰り下さい。");
+          first();
+        }else{
+          document.title=user;
+        }
+        var  pass=prompt("いらっしゃい"+user+"さん。パスワードを入力してください。");
+        var passWord="合言葉は消えちゃいました"
+        if(pass == passWord){
+          alent("you have passed");
+        }else{
+          alert("パスワードが違います。初期位置に転送します。");
+          first();
+        }
+      }
+      window.onload=first();
+    </script>
+
+    <h1>ようこそメンバー限定ページへ</h1>
+    <p>ロボ部関連の動画すべてここに貼っておきます。</p>
+    <h3>勝手に共有しないように</h3>
+    <p>そんな奴がいるはずはないが念のために。<br>
+      とはいえ質のいい動画は全然ないので今後も更新を続けます。
+      2021年6月15日22:53 佐藤 楓汰
+    </P>
+
+    <h2>第1回</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/XOUBfqiV2Rg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h2>第2回</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Vw3eHmi90mE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h2>第3回</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/bVo7QUSp_Wk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h2>第4回</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/J13ORQVt1M4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h2>第5回</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/5EqYaXciNBc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h2>第6回</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/CikEGdiDlXE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h2>第7回(最終)</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/pyGTweS45HA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <p>
+      <a target="_blank" href="awtsont.html">メインページへ戻る</a>
+    </p>
+    <p>
+      Copyright© Awattson 2021
+    </p>
+  </body>
