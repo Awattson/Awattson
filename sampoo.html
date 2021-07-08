@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja"
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="memberh.css">
+  </head>
+  <body id="homeAll">
+    <!--ログイン機能-->
+    <script type="text/javascript">
+      function first(){
+        var user = prompt("あなたの名前をご記入ください。");
+        if(user==false || user==null){
+          alert("名前を記入しない限り入れません。どうぞお帰り下さい。");
+          first();
+        }else{
+          document.title=user;
+        }
+        var  pass=prompt("いらっしゃい"+user+"さん。パスワードを入力してください。");
+        var passWord="崇めよ我は佐藤なり"
+        if(pass == passWord){
+          alent("you have passed");
+        }else{
+          alert("パスワードが違います。ザマーミロ！");
+          first();
+        }
+      }
+      window.onload=first();
+    </script>
+
+    <h1>ようこそクライアントさん！</h1>
+    <p>作ってみた<br>
+      2021年7月8日 佐藤
+    </P>
+    <h2>以下でそのページへ飛べるよ</h2>
+      <a target="_blank" href="sawadex.html">ここ</a>
+    <p>
+      <a target="_blank" href="awtsont.html">メインページへ戻る</a>
+    </p>
+    <p>
+      Copyright© Awattson 2021
+    </p>
+  </body>
