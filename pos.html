@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>ポスター.txt</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel=stylesheet" href="index.css">
+</head>
+
+<body>
+	<header>
+	<nav>
+		<ul>
+			<li><a href="#haikei">研究の背景</a></li>
+			<li><a href="#mokuteki">目的</a></li>
+			<li><a href="#houhou">方法</a></li>
+			<li><a href="#kekka">結果</a></li>
+			<li><a href="#kousatsu">考察</a></li>
+			<li><a href="#kadai">今後の課題</a></li>
+		</ul>
+	</nav>
+	</header>
+
+	<main>
+		<section id="site_reserve">
+		<section id="haikei">
+			<h1>研究の背景</h1>
+			<p>近年注目されている画像処理。私たちは画像処理による物体検出を用いて<br>
+			視覚障碍者の白杖の代理となる物体検出アプリの開発を思いついた。</p>
+		</section>
+
+		<section id="mokuteki">
+			<h1>目的</h1>
+			<p>今回の研究は以上の物体検出アプリの初期段階として、<br>
+			点字ブロックを検出→バイブレーションで触覚的に位置を知らせる、<br>
+			androidアプリの開発である。</p>
+		</section>
+
+		<section id="houhou">
+		<h1>方法</h1>
+
+		<h2>開発環境</h2>
+		<h3>ハードウェア側</h3>
+		<li>Windows10</li>
+		<li>raspberrypi3modelB</li>
+		<h3>ソフトウェア側</h3>
+		<li>OpenCV</li>
+		<li>Kivy</li>
+		<li>Dlib</li>
+		<li>Buildozer</li>
+		<h3>使用言語</h3>
+		<li>Python3.9</li>
+		<li>Java</li>
+		<p>2年次TensorFlowの利用を考えていたが、度重なるエラーにより断念。<br>
+		そこで私たちはDlibを利用することにした。<br>
+		dlib:C++で書かれた汎用目的のクロスプラットフォームソフトウェアライブラリ<br>
+		まずImgLabで学習用画像のラベル付け→xmlファイルで出力<br>
+		xmlファイルを使ってDlibで機械学習→データをsvmファイルで出力<br>
+		svmファイルを基に点字ブロックを検出するプログラムをPythonで作成<br>
+		Buildozerを用いて完成したプログラムファイルをAPKファイルに変換<br>
+		→試作版アプリの完成
+		</p>
+		</section>
+
+		<section id="kekka">
+		<h1>結果</h1>
+		<p>最終的にPCのカメラを通して、点字ブロックを検出することが出来た。<br>
+		また、点字ブロックを赤い枠で囲み、プッシュ通知を送ることにも成功。<br>
+		この機能をスマートフォン用に一部書き換え、<br>
+		BuildozerでAPKファイルに変換をするだけで試作アプリは完成するはずだが<br>
+		エラーにより完成には至らなかった。
+		</p>
+		</section>
+
+		<section id="kousatsu">
+		<h1>考察</h1>
+		</section>
+
+		<section id="kadai">
+		<h1>今後の課題</h1>
+		</section>
+		</section>
+	</main>
+</body>
