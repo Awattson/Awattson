@@ -1,0 +1,136 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:"Yu Gothic","游ゴシック",YuGothic,"游ゴシック体";
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    color:#ff00ff;
+}
+
+h2 {
+    color:#9400d3;
+}
+
+a {
+    color: #ff69b4;
+}
+
+a:hover {
+    color:#ff1493;
+}
+
+.clearlist{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#site_logo img{
+    background-color: #4e4e4e;
+    float: center;
+    width: 50%;
+}
+
+#site_logo{
+    background-color: #4e4e4e;
+    float: center;
+    width: 100%;
+}
+
+nav {
+    background-color: #ffe4e1;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul::after {
+    content:"";
+    display:block;
+    clear:both;
+}
+
+nav li {
+    float: left;
+    width: 50%;
+    text-align: center;
+
+}
+
+nav a {
+    display: block;
+    text-decoration:underline;
+    color:#8a2be2;
+}
+
+#topic {
+    background-color: #d8bfd8;
+    text-align: center;
+    color: #fffafa;
+}
+
+#concept{
+    background-color: #4e4e4e;
+}
+
+#repositories{
+    background-color: #ffe4e1;
+}
+
+#STF_ps_01_img img{
+    background-color: #8a2be2;
+    max-width: 300px;
+}
+
+footer{
+    background-color: #fff;
+    color:#ff1493;
+    text-align: center;
+}
+footer img{
+    max-width: 100px;
+}
+
+@media only screen and (max-width:680px){
+
+    body {
+        font-family:"メイリオ",meiryo,"Meiryo UI";
+        background-color: #4e4e4e;
+    }
+
+    .container{
+        margin: 0 10px;
+    }
+    
+    #site_logo img{
+        float: none;
+        width: 100%
+    }
+    img {
+        width:100%
+    }
+    footer img{
+        width:50%;
+    }
+    h1{
+        color: #fff;
+    }
+    h2{
+        color:#fff;
+    }
+    #repositories{
+        background-color: #4e4e4e;
+        color:#fff;
+    }
+}

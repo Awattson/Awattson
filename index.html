@@ -1,0 +1,100 @@
+<!DOCTyPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+
+
+        <script type="text/javascript">
+            function first(){
+              var user = prompt("あなたの名前をご記入ください。");
+              var usrname="robocon"
+              if(user==usrname){
+                var  pass=prompt("いらっしゃい"+user+"さん。パスワードを入力してください。");
+                var passWord="ppr"
+                if(pass == passWord){
+                    alent("you have passed");
+                }else{
+                    alert("パスワードが違います。初期位置に転送します。");
+                    first();
+                }
+              }else{
+                alert("名前を記入しない限り入れません。どうぞお帰り下さい。");
+                first();
+              }
+              
+            }
+            window.onload=first();
+          </script>
+        
+
+        <header>
+            <div id="site_logo">
+                <h1><img src="satofdensetsu.png"></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#concept">readme</a></li>
+                    <li><a href="#repositories">リポジトリ</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="topic">
+                <h1>お知らせ</h1>
+                <li><a href="#topic_1">回路班データサーバーサービス開始！</a></li>
+            </section>
+
+            <section id="concept">
+                <h1>README</h1>
+                <p>
+                    本ページは基板のリポジトリを共有するための場所です．</br>
+                    使い方は管理者から聞いてね！
+                </p>
+            </section>
+
+            <section id="repositories">
+                <h1>リポジトリ一覧</h1>
+                <ul>
+                    <li><a href="#mod">24仕様ロボコン用KiCADライブラリ</a></li>
+                    <li><a href="#STF_ps_01">STF_ps_01</a></li>
+                </ul>
+                <section id="mod">
+                    <h2>ロボコン用KiCADライブラリ</h2>
+                    <p>ロボコン用に作成，収集されたKiCADのMODを一括でダウンロードできるやつ</br>
+                    ダウンロード先は<a target="_blank" href="https://github.com/stf-laptop/stf-KiCAD_mod">ここをクリック</a></p>
+                </section>
+                <section id="STF_ps_01">
+                    <h2>STF_ps_01</h2>
+                    <p>
+                        2層型多種電圧変圧基板<br>
+                        <a target="_blank" href="STF_ps_01.pdf">安全にご使用するために</a><br>
+                        ダウンロード先は<a target="_blank" href="https://github.com/Awattson/STF_ps_01">ここをクリック</a>
+                    </p>
+                    <div id="STF_ps_01_img">
+                        <img src="STF_ps_01_f.png">
+                        <img src="STF_ps_01_b.png">
+                    </div>
+                </section>
+            </section>
+            <section id="topiclist">
+                <h1>お知らせ一覧</h1>
+                <section id="topic_1">
+                    <h2>回路班データサーバーサービス開始！</h2>
+                    <p>
+                        回路班の設計データを共有するためのリポジトリを見つけやすくするため，本サービスが開始しました．</br>
+                        リポジトリ一覧からほしいデータが保存されたリポジトリに飛んでね．</br>
+                        git push勝手にしないで．．．
+                    </p>
+                </section>
+            </section>
+        </main>
+        <footer>
+            <a href="#"><img src="stf_rogo.png"></a>
+            <p>Copyright© F.Sato 2024</p>
+        </footer>
+    </body>
+</html>
